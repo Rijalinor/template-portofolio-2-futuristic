@@ -151,7 +151,7 @@ function initCustomCursor() {
 // Fetch Data & Render Sections
 async function loadPortfolioData() {
     try {
-        const response = await fetch('/src/data/profile.json');
+        const response = await fetch('./data/profile.json');
         if (!response.ok) throw new Error('Failed to load profile data');
         const data = await response.json();
 
